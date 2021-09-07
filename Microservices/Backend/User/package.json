@@ -1,0 +1,30 @@
+{
+  "name": "ta_14-backend-user",
+  "version": "1.0.0",
+  "description": "Tugas Akhir - Microservices - User Service",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Hansen Situmorang",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.2",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/install18/ta_kel14-microservice-user.git"
+  },
+  "bugs": {
+    "url": "https://github.com/install18/ta_kel14-microservice-user/issues"
+  },
+  "homepage": "https://github.com/install18/ta_kel14-microservice-user#readme"
+}

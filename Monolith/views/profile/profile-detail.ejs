@@ -1,0 +1,17 @@
+<%- include('../includes/head.ejs') %>
+</head>
+
+<body>
+    <%- include('../includes/navigation.ejs') %>
+
+    <main class="centered">
+        <h1><%= user.email %></h1>
+        <hr>
+
+        <h2>Gender: <%= user.gender %></h2>
+        <p>Stock: <%= user.phoneNumber %></p>
+        
+        <a href="/profile/edit/%>?edit=true" class="btn">Edit</a>
+        <a href="/profile/password/%>?edit=true" class="btn">Update Password</a>
+    </main>
+    <%- include('../includes/end.ejs') %>

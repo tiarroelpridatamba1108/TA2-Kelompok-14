@@ -1,0 +1,28 @@
+<%- include('../includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/forms.css">
+    <link rel="stylesheet" href="/css/product.css">
+</head>
+
+<body>
+   <%- include('../includes/navigation.ejs') %>
+
+    <main>
+        <form class="product-form" action="/<% if (editing) { %>profile<% } %>" method="POST">
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" value="<% if (editing) { %><%= user.email %><% } %>" required>
+            </div>
+            <div class="form-control">
+                <label for="gender">Gender</label>
+                <input type="text" name="gender" id="gender" value="<% if (editing) { %><%= user.gender %><% } %>" required>
+            </div>
+            <div class="form-control">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="text" name="phoneNumber" id="phoneNumber" value="<% if (editing) { %><%= user.phoneNumber %><% } %>" required>
+            </div>
+
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+            <button class="btn" type="submit"><% if (editing) { %>Update Profile<% } %></button>
+        </form>
+    </main>
+<%- include('../includes/end.ejs') %>

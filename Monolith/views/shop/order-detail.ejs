@@ -1,0 +1,44 @@
+<%- include('../includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/orders.css">
+    </head>
+
+    <body>
+        <%- include('../includes/navigation.ejs') %>
+        <main class="centered">
+            <h1><%= order.orderDate %></h1>
+            <hr>
+            <p>Status: 
+                <% switch (order.status) { 
+                    case "P" : %>
+                        Waiting for Payment
+                    <% break;
+
+                    case "1" : %>
+                        Payment Accepted
+                    <% break;
+
+                    case "-1" : %>
+                        Order Canceled
+                    <% break;
+
+                    case "0" : %>
+                        Order out of Date
+                    <% break;
+                } %>
+            </p>
+            <p>Address: <%= order.address %></p>
+            <ul class="orders__products">
+                <% order.products.forEach(product => { %>
+                    <h1><%= product.productId.name %></h1>
+                    <hr>
+                    <div class="image">
+                        <img src="<%= product.productId.imageUrl %>" alt="<%= product.productId.title %>">
+                    </div>
+                    <h2>$<%= product.productId.price %></h2>
+                    <p>Quantity: <%= product.quantity %></p>
+                <% }); %>
+            </ul>
+            
+            
+        </main>
+        <%- include('../includes/end.ejs') %>

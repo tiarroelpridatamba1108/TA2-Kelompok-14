@@ -1,0 +1,21 @@
+<%- include('../includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/orders.css">
+    </head>
+
+    <body>
+        <%- include('../includes/navigation.ejs') %>
+        <main>
+            <% if (orders.length <= 0) { %>
+                <h1>Nothing there!</h1>
+            <% } else { %>
+                <ul class="orders">
+                    <% orders.forEach(order => { %>
+                        <li class="orders__item">
+                            <h1>Order - # <%= order.orderDate %></h1>
+                            <a href="/orders/<%= order._id %>" class="btn">Details</a>
+                        </li>
+                    <% }); %>
+                </ul>
+            <% } %>
+        </main>
+        <%- include('../includes/end.ejs') %>

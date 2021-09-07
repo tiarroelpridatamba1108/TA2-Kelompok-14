@@ -1,0 +1,26 @@
+{
+  "name": "ta_14-backend-product",
+  "version": "1.0.0",
+  "description": "Tugas Akhir - Microservices - Product Service",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Hansen Situmorang",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.2",
+    "nodemon": "^2.0.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/install18/ta_kel14-microservice-product.git"
+  },
+  "bugs": {
+    "url": "https://github.com/install18/ta_kel14-microservice-product/issues"
+  },
+  "homepage": "https://github.com/install18/ta_kel14-microservice-product#readme"
+}

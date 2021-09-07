@@ -1,0 +1,28 @@
+{
+  "name": "ta_14-backend-cart",
+  "version": "1.0.0",
+  "description": "Tugas Akhir - Microservices - Cart Service",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Hansen Situmorang",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.13",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/install18/ta_kel14-microservices-cart.git"
+  },
+  "bugs": {
+    "url": "https://github.com/install18/ta_kel14-microservices-cart/issues"
+  },
+  "homepage": "https://github.com/install18/ta_kel14-microservices-cart#readme"
+}
